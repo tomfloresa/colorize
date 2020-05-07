@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-import { Paginator } from "./../../components";
+import { Paginator, ColoredCard } from "./../../components";
 
 // Services
 import { getColors } from "./../../services";
 
 // Styles
-import { ColorsWrapper, Grid, Col, ColoredCard } from "./styled";
+import { ColorsWrapper, Grid, Col } from "./styled";
 
 export default class Colors extends Component {
   constructor(props) {
@@ -36,9 +36,9 @@ export default class Colors extends Component {
         <Grid>
           {!currentColors && <h1>Loading</h1>}
           {currentColors &&
-            currentColors.map((color) => (
-              <Col key={color.id}>
-                <ColoredCard color={color.color}>{color.id}</ColoredCard>
+            currentColors.map((colorData) => (
+              <Col key={colorData.id}>
+                <ColoredCard colorData={colorData} />
               </Col>
             ))}
         </Grid>

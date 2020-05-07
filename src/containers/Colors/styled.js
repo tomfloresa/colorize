@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import { device } from "./../../utils";
 
-import { Card } from "bighouse-ui-kit";
-import { Paginator } from "./../../components";
-
 export const ColorsWrapper = styled.div`
   height: 100%;
   background-color: ${(p) => p.theme.color.bg};
@@ -30,11 +27,4 @@ export const Grid = styled.div`
 
 export const Col = styled.div`
   flex: 1 0 30%;
-`;
-
-export const ColoredCard = styled(Card)`
-  background-color: ${(p) => p.color};
-  margin: 16px;
-  min-height: 210px;
-  cursor: pointer;
 `;

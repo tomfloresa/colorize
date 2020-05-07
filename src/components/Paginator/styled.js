@@ -34,4 +34,5 @@ export const PaginatorArrow = styled.button`
 
 export const PaginatorPage = styled.div`
   font-size: 24px;
+  font-weight: 800;
 `;

@@ -7,14 +7,14 @@ const Paginator = ({ currentPage, totalPages, moveBack, moveForward }) => {
   return (
     <PaginatorWrapper className="Paginator">
       <PaginatorArrow disabled={currentPage === 1} onClick={() => moveBack()}>
-        <i class="material-icons">keyboard_arrow_left</i>
+        <i className="material-icons">keyboard_arrow_left</i>
       </PaginatorArrow>
       <PaginatorPage>{currentPage}</PaginatorPage>
       <PaginatorArrow
         disabled={currentPage === totalPages}
         onClick={() => moveForward()}
       >
-        <span class="material-icons">keyboard_arrow_right</span>
+        <span className="material-icons">keyboard_arrow_right</span>
       </PaginatorArrow>
     </PaginatorWrapper>
   );
