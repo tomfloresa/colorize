@@ -13,6 +13,11 @@ export const ColorsWrapper = styled.div`
     left: 0;
     right: 0;
   }
+
+  @media ${device.mobileL} {
+    height: auto;
+    padding-bottom: 78px;
+  }
 `;
 
 export const Grid = styled.div`

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { transparentize } from "polished";
 import { motion } from "framer-motion";
+import {device} from "./../../utils";
 
 export const ShadowNotificationWrapper = motion.custom(styled.div`
   position: fixed;
@@ -18,6 +19,12 @@ export const ShadowNotificationWrapper = motion.custom(styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media ${device.mobileS} {
+    height: 130px;
+    width: 130px;
+    padding: 16px;
+  }
 `);
 
 export const ShadowNotificationText = styled.span`
@@ -25,4 +32,8 @@ export const ShadowNotificationText = styled.span`
   font-weight: 800;
   text-align: center;
   font-size: 32px;
+
+  @media ${device.mobileS} {
+    font-size: 28px;
+  }
 `;
