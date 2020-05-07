@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "bighouse-ui-kit": "^0.0.5",
+    "copy-to-clipboard": "^3.3.1",
     "formik": "^2.1.4",
     "framer-motion": "^1.10.3",
     "lodash": "^4.17.15",

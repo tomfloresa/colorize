@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import copy from "copy-to-clipboard";
 
 import { Paginator, ColoredCard } from "./../../components";
 
@@ -8,7 +11,9 @@ import { getColors } from "./../../services";
 // Styles
 import { ColorsWrapper, Grid, Col } from "./styled";
 
-export default class Colors extends Component {
+import { toggleShadowNotification } from "./../../redux/actions";
+
+class Colors extends Component {
   constructor(props) {
     super(props);
 
@@ -28,6 +33,15 @@ export default class Colors extends Component {
     );
   };
 
+  onColoredCardClicked = (hex) => {
+    copy(hex);
+    this.props.toggleShadowNotification("Copiado!");
+
+    setTimeout(() => {
+      this.props.toggleShadowNotification();
+    }, 600);
+  };
+
   render() {
     const { currentColors, currentPage } = this.state;
 
@@ -38,7 +52,10 @@ export default class Colors extends Component {
           {currentColors &&
             currentColors.map((colorData) => (
               <Col key={colorData.id}>
-                <ColoredCard colorData={colorData} />
+                <ColoredCard
+                  colorData={colorData}
+                  cardClicked={(color) => this.onColoredCardClicked(color)}
+                />
               </Col>
             ))}
         </Grid>
@@ -60,3 +77,13 @@ export default class Colors extends Component {
     );
   }
 }
+
+const mapDispatchToProps = (dispatch) =>
+  bindActionCreators(
+    {
+      toggleShadowNotification,
+    },
+    dispatch
+  );
+
+export default connect(null, mapDispatchToProps)(Colors);

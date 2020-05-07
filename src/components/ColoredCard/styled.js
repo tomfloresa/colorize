@@ -8,8 +8,8 @@ export const ColoredCardWrapper = motion.custom(styled.div`
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
-  box-shadow: 0 0.625rem 1.6875rem 0 rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   position: relative;
 `);

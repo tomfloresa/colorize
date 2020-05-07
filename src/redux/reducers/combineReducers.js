@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
 
 // Reducers
-import routerSectionReducer from "./routerSectionReducer";
+import shadowNotificationReducer from "./shadowNotificationReducer";
 
 export default combineReducers({
-  routerSection: routerSectionReducer,
+  shadowNotification: shadowNotificationReducer,
 });
