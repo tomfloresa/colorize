@@ -4,65 +4,23 @@ Colorized es una sencilla aplicación, que mediante la consulta a una API, trae 
 
 ### Tecnologías
 
-* [ReactJS](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
-* [Styled Components](https://styled-components.com/)
-* [Framer Motion](https://www.framer.com/motion/)
-* [Polished](https://polished.js.org/)
-* [Axios](https://github.com/axios/axios)
+- [ReactJS](https://reactjs.org/) -> Framework para creación de interfaces de usuario
+- [Redux](https://redux.js.org/) -> Manejo de estado de la aplicación
+- [Styled Components](https://styled-components.com/) -> CSS in JS
+- [Framer Motion](https://www.framer.com/motion/) -> Librería de animaciones
+- [Polished](https://polished.js.org/) -> Librería con utilitarios para estilos
+- [Axios](https://github.com/axios/axios) -> Cliente HTTP
 
+### Instalación
 
-### `npm test`
+1. Clona este repo: [https://github.com/tomfloresa/colorize](https://github.com/tomfloresa/colorize>)
+2. Posicionate en la raiz de la carpeta clonada y ejecuta `npm i` (Debes tener previamente instalado [NodeJS](https://nodejs.org/en/)) para instalar las dependcias del proyecto
+3. Una vez las dependencias se hayan instalado, ejecuta `npm start`
+4. Se abrirá una ventana de tu navegador con el proyecto
+5. Si deseas generar un archivos para un abmbiente productivo, ejecuta `npm run build` desde la raíz del proyecto. Se generará una carpeta con el "compilado" listo para producción.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Proyecto
 
-### `npm run build`
+Si deseas ver el proyecto, puedes ingresar [acá](https://admiring-hawking-77ad07.netlify.app/).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Hosted en Netlify.
