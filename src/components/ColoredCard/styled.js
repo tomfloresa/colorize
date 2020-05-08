@@ -7,7 +7,6 @@ export const ColoredCardWrapper = motion.custom(styled.div`
   min-height: 210px;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -16,6 +15,11 @@ export const ColoredCardWrapper = motion.custom(styled.div`
 
 export const ColoredCardPart = styled.div`
   flex-grow: 1;
+
+  span {
+    color: ${(p) => p.theme.color.white};
+    font-weight: 600;
+  }
 `;
 
 export const ColoredCardUpperPart = styled(ColoredCardPart)`
@@ -25,6 +29,7 @@ export const ColoredCardUpperPart = styled(ColoredCardPart)`
 export const ColoredCardMiddlePart = styled(ColoredCardPart)`
   color: ${(p) => p.theme.color.white};
   text-align: center;
+  align-self: center;
 
   span {
     display: block;
@@ -35,4 +40,5 @@ export const ColoredCardMiddlePart = styled(ColoredCardPart)`
 
 export const ColoredCardLowerPart = styled(ColoredCardPart)`
   align-self: flex-end;
+  text-align: right;
 `;

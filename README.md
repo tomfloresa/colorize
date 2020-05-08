@@ -1,16 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Intro
 
-## Available Scripts
+Colorized es una sencilla aplicación, que mediante la consulta a una API, trae un set de colores (paginado), con medatada de cada uno de los colores enviados como respuesta a la consulta.
 
-In the project directory, you can run:
+### Tecnologías
 
-### `npm start`
+* [ReactJS](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [Styled Components](https://styled-components.com/)
+* [Framer Motion](https://www.framer.com/motion/)
+* [Polished](https://polished.js.org/)
+* [Axios](https://github.com/axios/axios)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `npm test`
 

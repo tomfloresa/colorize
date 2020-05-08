@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { device } from "./../../utils";
 
 export const ColorsWrapper = styled.div`
@@ -14,7 +14,7 @@ export const ColorsWrapper = styled.div`
     right: 0;
   }
 
-  @media ${device.mobileL} {
+  @media ${device.laptop} {
     height: auto;
     padding-bottom: 78px;
   }

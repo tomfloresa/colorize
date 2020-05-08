@@ -16,12 +16,16 @@ const ColoredCard = ({ colorData, cardClicked }) => {
       whileTap={{ scale: 0.9 }}
       onClick={() => cardClicked(color)}
     >
-      <ColoredCardUpperPart>{year}</ColoredCardUpperPart>
+      <ColoredCardUpperPart>
+        <span>{year}</span>
+      </ColoredCardUpperPart>
       <ColoredCardMiddlePart>
         <span>{`${name}`}</span>
         <span>{`${color}`}</span>
       </ColoredCardMiddlePart>
-      <ColoredCardLowerPart>{pantone_value}</ColoredCardLowerPart>
+      <ColoredCardLowerPart>
+        <span>{pantone_value}</span>
+      </ColoredCardLowerPart>
     </ColoredCardWrapper>
   );
 };
