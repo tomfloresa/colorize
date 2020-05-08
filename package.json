@@ -13,6 +13,7 @@
     "bighouse-ui-kit": "^0.0.5",
     "copy-to-clipboard": "^3.3.1",
     "framer-motion": "^1.10.3",
+    "lodash": "^4.17.15",
     "material-design-icons": "^3.0.1",
     "polished": "^3.5.1",
     "react": "^16.13.1",

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import { device } from "./../../utils";
 
 export const ColorsWrapper = styled.div`
@@ -33,4 +32,9 @@ export const Grid = styled.div`
 
 export const Col = styled.div`
   flex: 1 0 30%;
+`;
+
+export const SkeletonCardColarized = styled.div`
+  margin: 16px;
+  min-height: 210px;
 `;

@@ -3,14 +3,15 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import copy from "copy-to-clipboard";
 
-import { Paginator, ColoredCard } from "./../../components";
+import { Paginator, ColoredCard, Skeleton } from "./../../components";
 
 // Services
 import { getColors } from "./../../services";
 
 // Styles
-import { ColorsWrapper, Grid, Col } from "./styled";
+import { ColorsWrapper, Grid, Col, SkeletonCardColarized } from "./styled";
 
+// Actions
 import { toggleShadowNotification } from "./../../redux/actions";
 
 class Colors extends Component {
@@ -48,8 +49,7 @@ class Colors extends Component {
     return (
       <ColorsWrapper>
         <Grid>
-          {!currentColors && <h1>Loading</h1>}
-          {currentColors &&
+          {currentColors.length > 0 &&
             currentColors.map((colorData) => (
               <Col key={colorData.id}>
                 <ColoredCard
